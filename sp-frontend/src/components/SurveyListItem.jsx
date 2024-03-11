@@ -4,7 +4,9 @@ import TButton from "./core/TButton";
 
 
 
+// eslint-disable-next-line react/prop-types
 export default function SurveyListItem({survey , onDeleteClick}) {
+
     return (
         <div className="flex flex-col py-4 px-6 shadow-md bg-white hover:bg-gray-50 h-[470px]">
             <img
