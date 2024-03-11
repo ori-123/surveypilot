@@ -1,4 +1,5 @@
-import {PencilIcon} from "@heroicons/react/24/outline/index.js";
+import {ArrowTopRightOnSquareIcon, PencilIcon} from "@heroicons/react/16/solid/index.js";
+
 
 export default function SurveyListItem({survey}) {
     return (
@@ -19,6 +20,11 @@ export default function SurveyListItem({survey}) {
                     <PencilIcon className="w-5 h-5 mr-2" />
                     Edit
                 </TButton>
+                <div className="flex items-center">
+                    <TButton href = {`/view/survey/${survey.slug}`} circle link >
+                        <ArrowTopRightOnSquareIcon className = "-5h-5" />
+                    </TButton>
+                </div>
             </div>
         </div>
     );
