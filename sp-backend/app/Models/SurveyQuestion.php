@@ -7,6 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 
 /**
  * @method static create(array $validated)
+ * @method static where(array $array)
  */
 class SurveyQuestion extends Model
 {
