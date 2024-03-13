@@ -2,7 +2,6 @@ import { Fragment } from "react";
 import { Disclosure, Menu, Transition } from "@headlessui/react";
 import {
     Bars3Icon,
-    BellIcon,
     UserIcon,
     XMarkIcon,
 } from "@heroicons/react/24/outline";
@@ -10,7 +9,6 @@ import { Navigate, NavLink, Outlet } from "react-router-dom";
 import { useStateContext } from "../contexts/ContextProvider";
 import axiosClient from "../axios";
 import { useEffect } from "react";
-import Toast from "./Toast";
 
 const navigation = [
     { name: "Dashboard", to: "/" },
