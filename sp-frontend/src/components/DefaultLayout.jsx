@@ -9,6 +9,7 @@ import { Navigate, NavLink, Outlet } from "react-router-dom";
 import { useStateContext } from "../contexts/ContextProvider";
 import axiosClient from "../axios";
 import { useEffect } from "react";
+import Toast from "./Toast.jsx";
 
 const navigation = [
     { name: "Dashboard", to: "/" },
