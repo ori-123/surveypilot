@@ -4,7 +4,6 @@ import {useState} from "react";
 import {v4 as uuidv4} from "uuid";
 import QuestionEditor from "./QuestionEditor";
 
-// eslint-disable-next-line react/prop-types
 export default function SurveyQuestions({questions, onQuestionsUpdate}) {
     const [myQuestions, setMyQuestions] = useState([...questions]);
 
@@ -70,7 +69,7 @@ export default function SurveyQuestions({questions, onQuestionsUpdate}) {
                 ))
             ) : (
                 <div className="text-gray-400 text-center py-4">
-                    You dont have any questions created
+                    You don't have any questions created
                 </div>
             )}
         </>
