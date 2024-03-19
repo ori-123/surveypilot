@@ -1,11 +1,11 @@
 import { PlusCircleIcon } from "@heroicons/react/24/outline";
 import { useEffect, useState } from "react";
-import axiosClient from "/Users/gaborattila/Projects/CodeCool/php/surveypilot/sp-frontend/src/axios.js";
+import axiosClient from "../axios";
 import TButton from "../components/core/TButton";
 import PageComponent from "../components/PageComponent";
+import PaginationLinks from "../components/PaginationLinks";
 import SurveyListItem from "../components/SurveyListItem";
 import { useStateContext } from "../contexts/ContextProvider";
-
 
 export default function Surveys() {
     const { showToast } = useStateContext();

@@ -4,7 +4,9 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests\LoginRequest;
 use App\Http\Requests\SignupRequest;
+use App\Models\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 
 class AuthController extends Controller
@@ -13,7 +15,7 @@ class AuthController extends Controller
     {
         $data = $request->validated();
 
-        /** @var \App\Models\User $user */
+        /** @var User $user */
         $user = User::create([
             'name' => $data['name'],
             'email' => $data['email'],
@@ -51,7 +53,6 @@ class AuthController extends Controller
     {
         /** @var User $user */
         $user = Auth::user();
-        // Revoke the token that was used to authenticate the current request...
         $user->currentAccessToken()->delete();
 
         return response([
