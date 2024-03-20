@@ -16,7 +16,6 @@ export default function Surveys() {
     const onDeleteClick = (id) => {
         if (window.confirm("Are you sure you want to delete this survey?")) {
             axiosClient.delete(`/survey/${id}`).then(() => {
-                //navigating doesn't work here, because we're already on the surveys page, have to reload
                 getSurveys();
                 showToast('The survey was deleted');
             });

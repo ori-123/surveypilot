@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import PropTypes from "prop-types";
 
 export default function TButton({
                                     color = "indigo",
@@ -11,19 +10,6 @@ export default function TButton({
                                     onClick = () => {},
                                     children,
                                 }) {
-    TButton.propTypes = {
-        color: PropTypes.string,
-        to: PropTypes.string,
-        circle: PropTypes.bool,
-        href: PropTypes.string,
-        link: PropTypes.bool,
-        target: PropTypes.string,
-        onClick: PropTypes.func,
-        children: PropTypes.node,
-    };
-
-
-
     let classes = [
         "flex",
         "items-center",

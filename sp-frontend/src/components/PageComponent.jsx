@@ -1,3 +1,5 @@
+import React from "react";
+
 export default function PageComponent({ title, buttons = '', children }) {
     return (
         <div>
