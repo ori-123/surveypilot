@@ -86,11 +86,6 @@ export default function Dashboard() {
                                         <PencilIcon className="w-5 h-5 mr-2" />
                                         Edit Survey
                                     </TButton>
-
-                                    <TButton link>
-                                        <EyeIcon className="w-5 h-5 mr-2" />
-                                        View Answers
-                                    </TButton>
                                 </div>
                             </div>
                         )}

@@ -17,7 +17,7 @@ return new class extends Migration
             $table->string('question', 2000);
             $table->longText('description')->nullable();
             $table->longText('data')->nullable();
-            $table->foreignId('survey_id')->references('id')->on('surveys');
+            $table->foreignId('survey_id')->references('id')->on('surveys')->onDelete('cascade');
             $table->timestamps();
         });
     }
